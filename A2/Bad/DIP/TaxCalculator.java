@@ -15,9 +15,10 @@ public class TaxCalculator {
         taxExemptiongst.check();
         TaxExemptionCORP taxExemptioncorp = new TaxExemptionCORP(corpTax,1000);
         taxExemptioncorp.check();
-//        gstTax.calculateTax(1000);
-//        gstTax.calculateRebate(1000);
-//        corpTax.calculateTax(1000);
-//        corpTax.calculateRebate(1000);
+        /* here the Tax calculator is the higher level class which is dependent on the lower level class
+        TaxExemptionGST and TaxExemptionCorp.
+        Hence it is violating the Dependency Inversion Principle.
+        If we want to add one more taxing method then we need to change this TaxCalculator Class
+         */
     }
 }

@@ -1,6 +1,10 @@
 package Bad.SRP;
 
 public class Student {
+    /*
+    Student class performs several functions which acc to the SRP, is bad coding.
+    So we need to divide the functionalities into various classes.
+     */
 
     public String name;
     public String email;

@@ -2,6 +2,10 @@ package Good.SRP;
 
 public class Main {
     public static void main(String args[]){
+            /*
+            Here functionalities of the student class has been divided over different classes, which will follow the single
+            responsibility principle.
+             */
             Student s1 = new Student();
             s1.setName("Khushi Shah");
             s1.setEmail("khshah2699@gmail.com");

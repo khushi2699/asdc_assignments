@@ -1,6 +1,9 @@
 package Good.ISP;
 
 public class Sandwich implements Cheese_Toppings, Peri_Toppings, Bread_Toppings, Onions_Toppings, Grill {
+    /*
+    Sandwich class only implements the interfaces of the toppings that are required by it.
+     */
     @Override
     public void addCheese() {
         System.out.println("Cheese used in Sandwich");

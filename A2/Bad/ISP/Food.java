@@ -3,6 +3,10 @@ package Bad.ISP;
 public class Food {
 
     public static void main(String[] args) {
+        /*
+        Acc to Interface Seggregation Principle, there are several food types
+        But not all the food types have all the types of toppings.
+         */
         Toppings toppings_pizza = new Pizza();
         toppings_pizza.addCheese();
         toppings_pizza.addOnions();
