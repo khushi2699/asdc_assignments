@@ -32,7 +32,7 @@ public class Building extends BoardComponent
 	public void update(){
 		buildingHealth -= 1;
 		if(buildingHealth == 0){
-			GameBoard.Instance().DecrementBuildingCount();
+			GameBoard.Instance().DecrementBuildingCount(); //decreasing building count if health = 0
 			System.out.println("Building destroyed by the asteroid!!!");
 			System.out.println("New Building Count: "+GameBoard.Instance().GetBuildingCount());
 		}

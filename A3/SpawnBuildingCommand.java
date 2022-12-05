@@ -14,6 +14,6 @@ public class SpawnBuildingCommand extends Command
         IAsteroidGameFactory factory = GameBoard.Instance().GetFactory();
         System.out.println("Spawning building at (" + args[0] + "," + args[1] + ")");
         square.Add(factory.MakeBuilding());
-        GameBoard.Instance().IncrementBuildingCount();
+        GameBoard.Instance().IncrementBuildingCount(); //incrementing building count
     }
 }

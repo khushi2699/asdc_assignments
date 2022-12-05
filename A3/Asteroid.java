@@ -28,7 +28,7 @@ public class Asteroid extends BoardComponent
 				boardComponent = boardComponentParent.boardComponentParent;
 
 			}
-			AsteroidImpact.Instance().notifyObservers(boardComponent);
+			AsteroidImpact.Instance().notifyObservers(boardComponent); //notifying all the observers of the subject that subject event has happened
 			// It should then remove itself from its parent, it no longer exists in the
 			// hierarchy and should not receive any more operations.
 			boardComponentParent.Remove(this);
